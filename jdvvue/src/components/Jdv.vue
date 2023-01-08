@@ -9,6 +9,7 @@
 
 <script>
 
+
 function conta_vivos(m, x, y) {
     const delta_coord = [
         [-1, -1], [-1, 0], [-1, 1],
@@ -50,19 +51,11 @@ export default {
     name: 'Life',
     data() {
         return {
-            m: [
-                [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-                [0, 1, 1, 0, 0, 0, 1, 1, 1, 0],
-                [0, 0, 0, 0, 0, 0, 1, 0, 1, 0],
-                [0, 0, 1, 0, 1, 0, 0, 1, 0, 0],
-                [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-                [1, 1, 1, 0, 0, 0, 1, 1, 1, 0],
-                [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
+            m: []
         }
+    },
+    created() {
+        this.matriz()
     },
     mounted() {
         setInterval(() => {
@@ -72,7 +65,17 @@ export default {
     methods: {
         recarrega() {
             this.m = atualiza(this.m)
+        },
+        matriz() {
+            let m = new Array(16)
+            for (let i = 0; i < 16; i++) {
+                m[i] = new Array(30)
+                for (let j = 0; j < 30; j++) {
+                    m[i][j] = Math.floor(Math.random() * 2)
+            this.m = m
     }
+}
+        }
     }
 }
 </script>

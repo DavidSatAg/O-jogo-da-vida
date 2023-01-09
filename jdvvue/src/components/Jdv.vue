@@ -1,8 +1,10 @@
 <template>
     <div>
+        <div class="plano-de-fundo">
         <h1>Jogo da vida</h1>
-        <div v-for="(linha, id) in m" :key="id" class="container">
-            <div v-for="(quadrado, id) in linha" :key="id" class ="quadrado" :class="{vivo: quadrado==1}"></div>
+            <div v-for="(linha, id) in m" :key="id" class="container">
+                <div v-for="(quadrado, id) in linha" :key="id" class ="quadrado" :class="{vivo: quadrado==1}"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -89,9 +91,9 @@ export default {
     width: 40px;
     height: 40px;
     border: 1px solid
-
 }
 .vivo {
     background-color: rgb(110, 197, 110);
 }
+
 </style>

@@ -12,11 +12,12 @@ O padrão inicial é a primeira geração. A segunda geração evolui da aplica�
 
 ## Como rodar os projetos
 ### Python
-
+*No diretório jdvpython digitar:*
 - python3 -m jdv
 
 ### Vue
-
+*No diretório jdvvue*
+- npm install
 - npm run build
 - npm run serve
 

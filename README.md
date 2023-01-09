@@ -1,5 +1,6 @@
 # O-jogo-da-vida
 
+## [Link](https://davidsatag.github.io/O-jogo-da-vida/) do Jogo da Vida em vue
 
 ## O jogo da vida de Conway
 O **Jogo da Vida** (um exemplo de autômato celular) é jogado em uma grade retangular bidimensional infinita de células. Cada célula pode estar viva ou morta. O status de cada célula muda a cada turno do jogo (também chamado de geração), dependendo do status dos 8 vizinhos dessa célula. Vizinhos de uma célula são células que tocam essa célula, seja horizontal, vertical ou diagonal dessa célula.

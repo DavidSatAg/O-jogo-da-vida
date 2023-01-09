@@ -12,14 +12,11 @@ O padrão inicial é a primeira geração. A segunda geração evolui da aplica�
 
 ## Como rodar os projetos
 ### Python
-'''
-python3 -m jdv
-'''
+
+- python3 -m jdv
 
 ### Vue
-'''
-npm run build
-'''
-'''
-npm run serve
-'''
+
+- npm run build
+- npm run serve
+

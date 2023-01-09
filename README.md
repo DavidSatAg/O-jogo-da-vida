@@ -9,3 +9,17 @@ O padrão inicial é a primeira geração. A segunda geração evolui da aplica�
 
 - Se a célula estiver viva, ela permanecerá viva se tiver 2 ou 3 vizinhos vivos
 - Se a célula estiver morta, ela ganha vida apenas no caso de ter 3 vizinhos vivos
+
+## Como rodar os projetos
+### Python
+'''
+python3 -m jdv
+'''
+
+### Vue
+'''
+npm run build
+'''
+'''
+npm run serve
+'''
